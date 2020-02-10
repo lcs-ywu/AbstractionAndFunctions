@@ -18,7 +18,7 @@
 
  Most humans cannot directly read binary, either!
   
- Page 1 | [Next: About Abstractions](@next)
+ Page 1 | [Next: Curriculum Expectations](@next)
  
  */
 

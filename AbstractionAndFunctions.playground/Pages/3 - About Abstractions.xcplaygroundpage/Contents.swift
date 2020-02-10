@@ -21,7 +21,7 @@
  
  [Unicode is the current standard](https://en.wikipedia.org/wiki/List_of_Unicode_characters) for how computers represent, or *abstract* away, how letterforms and glyphs are shown on screen.
 
- [Previous: Introduction](@previous) | Page 2 | [Next: About Functions](@next)
+ [Previous: Curriculum Expectations](@previous) | Page 3 | [Next: About Functions](@next)
 
 */
 

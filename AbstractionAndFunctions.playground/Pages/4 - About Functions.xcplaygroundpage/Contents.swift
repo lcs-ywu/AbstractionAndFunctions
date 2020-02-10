@@ -11,7 +11,7 @@
  
  Where does *abstraction* come in? Once the function is defined, and tested to be sure it is providing correct output, we never need to think about how it works again. We can just invoke it – use it – as needed.
 
- [Previous: About Abstractions](@previous) | Page 3 | [Next: ???](@next)
+ [Previous: About Abstractions](@previous) | Page 4 | [Next: Area Example - Rectangle](@next)
 
 */
 
