@@ -27,7 +27,11 @@ import Foundation
  */
 // Begin your work here...
 
-
+//Parameter for circles
+func circleParameter(radius:Double) -> Double {
+    return Double.pi * 2.0 * radius
+}
+print("The parameter of the circle is " + String(format:"%.2f",circleParameter(radius:5.0)) )
 
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
