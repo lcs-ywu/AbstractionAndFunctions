@@ -33,6 +33,15 @@ func circleParameter(radius:Double) -> Double {
 }
 print("The parameter of the circle is " + String(format:"%.2f",circleParameter(radius:5.0)) )
 
+//Parameter of a Trapezoid
+func trapezoidParameter(a:Double,b:Double,c:Double,d:Double) -> Double {
+    return a+b+c+d
+}
+print("The parameter of the trapezoid is \(trapezoidParameter(a:1,b:2,c:3,d:4))" )
+
+
+
+
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */
