@@ -28,55 +28,84 @@ import Foundation
 // Begin your work here...
 
 //Parameter for circles
-func circleParameter(radius:Double) -> Double {
+func circleParameter(radius:Double) -> Double? {
+    guard radius>0 else {
+        return nil
+    }
     return Double.pi * 2.0 * radius
 }
-print("The parameter of the circle is " + String(format:"%.2f",circleParameter(radius:5.0)) )
 
-//Parameter of a Trapezoid
-func trapezoidParameter(a:Double,b:Double,c:Double,d:Double) -> Double {
-    return a+b+c+d
+//Test case #1: radius:5 result:31.41
+if let perimeter = circleParameter(radius:5.0) {
+    print("The parameter of the circle is " + String(format:"%.2f", perimeter) )
 }
-print("The parameter of the trapezoid is \(trapezoidParameter(a:1,b:2,c:3,d:4))" )
-
-//Area for circles
-func circleArea(radius:Double) -> Double {
-    return Double.pi * pow(radius,2)
-}
-print("The area of the circle is " + String(format:"%.2f",circleArea(radius:5.0)) )
-
-//Area for trapezoids
-func trapezoidArea(a:Double,b:Double,h:Double) -> Double {
-    return h * (a+b) / 2
-}
-print("The area of the trapezoid is \(trapezoidArea(a:1,b:3,h:5))" )
-
-//Surface area of a cylinder
-func cylinderSurfaceArea(r:Double,h:Double) -> Double {
-    return 2 * Double.pi * ((pow(r, 2))+r*h)
-}
-print("The surface area of the cylinder is " +  String(format:"%.2f",cylinderSurfaceArea(r: 5, h: 5)))
-
-//Surface area of a Squarebased pyramid
-func areaOfSquarebasedPyramid(b:Double,s:Double) -> Double {
-    return pow(b, 2) + 2 * b * s
-}
-print("The surface area of the cylinder is \(areaOfSquarebasedPyramid(b: 5, s: 5))")
-
-//Volume of a sphere
-func VolumeOfSphere(r:Double) -> Double {
-    return (4*Double.pi*pow(r, 3))/3
-}
-print("The volume of the cylinder is " + String(format:"%.2f",VolumeOfSphere(r: 5)))
-
-//Volume of a cone
-func VolumeOfCones(r:Double,h:Double) -> Double {
-    return Double.pi*pow(r,2)*h/3
-}
-print("The volume of the cone is " + String(format:"%.2f",VolumeOfCones(r: 5,h:5)))
-
-
-
+//
+//
+////Parameter of a Trapezoid
+//func trapezoidParameter(a:Double,b:Double,c:Double,d:Double) -> Double? {
+//    guard a>0,b>0,c>0,d>0 else {
+//        return nil
+//    }
+//    return a+b+c+d
+//}
+//print("The parameter of the trapezoid is \(trapezoidParameter(a:1,b:2,c:3,d:4))" )
+//
+////Area for circles
+//func circleArea(radius:Double) -> Double? {
+//    guard radius>0 else {
+//        return nil
+//    }
+//    return Double.pi * pow(radius,2)
+//}
+//print("The area of the circle is " + String(format:"%.2f",circleArea(radius:5.0)) )
+//
+////Area for trapezoids
+//func trapezoidArea(a:Double,b:Double,h:Double) -> Double? {
+//    guard a>0,b>0,h>0 else {
+//        return nil
+//    }
+//    return h * (a+b) / 2
+//}
+//print("The area of the trapezoid is \(trapezoidArea(a:1,b:3,h:5))" )
+//
+////Surface area of a cylinder
+//func cylinderSurfaceArea(r:Double,h:Double) -> Double? {
+//    guard r>0,h>0 else {
+//        return nil
+//    }
+//    return 2 * Double.pi * ((pow(r, 2))+r*h)
+//}
+//print("The surface area of the cylinder is " +  String(format:"%.2f",cylinderSurfaceArea(r: 5, h: 5)))
+//
+////Surface area of a Squarebased pyramid
+//func areaOfSquarebasedPyramid(b:Double,s:Double) -> Double? {
+//    guard b>0,s>0 else {
+//        return nil
+//    }
+//    return pow(b, 2) + 2 * b * s
+//}
+//print("The surface area of the cylinder is \(areaOfSquarebasedPyramid(b: 5, s: 5))")
+//
+////Volume of a sphere
+//func VolumeOfSphere(r:Double) -> Double? {
+//    guard r>0 else {
+//        return nil
+//    }
+//    return (4*Double.pi*pow(r, 3))/3
+//}
+//print("The volume of the cylinder is " + String(format:"%.2f",VolumeOfSphere(r: 5)))
+//
+////Volume of a cone
+//func VolumeOfCones(r:Double,h:Double) -> Double? {
+//    guard r>0,h>0 else {
+//        return nil
+//    }
+//    return Double.pi*pow(r,2)*h/3
+//}
+//print("The volume of the cone is " + String(format:"%.2f",VolumeOfCones(r: 5,h:5)))
+//
+//
+//
 
 
 

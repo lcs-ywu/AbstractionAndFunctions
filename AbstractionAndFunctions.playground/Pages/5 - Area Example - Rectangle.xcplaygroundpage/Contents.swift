@@ -36,7 +36,7 @@ func areaOfRectangle(length: Double, width: Double) -> Double? {
 
 // Invoke the function... to find the area of a rectangle that is 10 units long and 5 units wide
 //Test case #1: length:10, base:5, result:50
-let result = areaOfRectangle(length: 10, width: 5)
+let result = areaOfRectangle(length: 10, width: 5)!
 
 // Report the results
 print("The area of that rectangle was \(result) square units.")
